@@ -70,31 +70,31 @@
 			<%
 				}
 			%>
- 
+
 		</div>
 	</nav>
 	<div class="container">
 		<div class="row">
-			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
-				<thead>
-					<!-- 테이블의 한 행을 말함. -->
-					<tr>
-						<th style="background-color: #eeeeee; text-align: center;">번호</th>
-						<th style="background-color: #eeeeee; text-align: center;">제목</th>
-						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
-						<th style="background-color: #eeeeee; text-align: center;">작성일</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>안녕하세요</td>
-						<td>김관응</td>
-						<td>2019-07-05</td>
-					</tr>
-				</tbody>
-			</table>
-			<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+			<form method="post" action="writeAction.jsp">
+				<table class="table table-striped"
+					style="text-align: center; border: 1px solid #dddddd">
+					<thead>
+						<!-- 테이블의 한 행을 말함. -->
+						<tr>
+							<th colspan="2" style="background-color: #eeeeee; text-align: center;">게시판 글쓰기 양식</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="text" class="form-control" placeholder="글 제목" name="boardTitle" maxlength="50"></td>
+						</tr>
+						<tr>
+							<td><textarea type="text" class="form-control" placeholder="글 제목" name="boardContent" maxlength="2048" style="height: 350px;"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+				<input type="submit" class="btn btn-primary pull-right" value="글쓰기">
+			</form>
 		</div>
 	</div>
 	<!-- 로긴폼 -->
