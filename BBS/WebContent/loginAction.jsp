@@ -38,6 +38,7 @@
 
 		//로그인 성공
 		if (result == 1) {
+			//세션값 부여
 			session.setAttribute("userID", user.getUserID());
 			PrintWriter script = response.getWriter();
 			script.println("<script>");

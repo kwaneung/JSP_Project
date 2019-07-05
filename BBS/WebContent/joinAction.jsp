@@ -25,7 +25,7 @@
 </head>
 <body>
 	<%
-		//라긴된 회원들은 페이지에 접속 할 수 없도록
+		//로그인이 된 회원들은 페이지에 접속 할 수 없도록
 		String userID = null;
 		if (session.getAttribute("userID") != null) {
 			userID = (String) session.getAttribute("userID");
@@ -58,6 +58,7 @@
 			}
 			//가입성공
 			else {
+				//세션값 부여
 				session.setAttribute("userID", user.getUserID());
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
