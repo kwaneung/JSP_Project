@@ -1,4 +1,4 @@
 # JSP_Project
 
-# eclipse, mysql, tomcat
-server
+use eclipse, mysql, tomcat
+web server
