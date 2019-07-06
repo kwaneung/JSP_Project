@@ -76,7 +76,7 @@ a, a:hover {
 					aria-expanded="false">회원관리<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<!-- 현재 페이지가 로그인이기때문에 로그인을 파랗게 액티브 해놓는다 -->
-						<li><a href="logoutAction.jsp">로그아웃</a></li>
+						<li><a onclick="return confirm('로그아웃 하시겠습니까?')" href="logoutAction.jsp">로그아웃</a></li>
 					</ul>
 				</li>
 			</ul>
